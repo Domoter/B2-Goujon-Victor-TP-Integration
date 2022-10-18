@@ -20,10 +20,11 @@ header nav {
 header nav ul {
   display: flex;
   flex-direction: row;
-  margin-left: 184px;
+  margin-left: 184pxs;
   margin-right: 70px;
 }
 header nav ul li {
+  display: flex;
   list-style: none;
 }
 header nav ul a {
@@ -31,6 +32,10 @@ header nav ul a {
   color: #354463;
   font-size: 16px;
   margin-left: 70px;
+}
+header nav ul a:hover {
+  text-decoration: underline 2px solid #354463;
+  transition: 1s;
 }
 header .bouton-nav {
   background-color: #C1F7D5;
@@ -42,6 +47,10 @@ header .bouton-nav {
   -moz-border-radius: 25px / 24px;
   border-radius: 25px / 24px;
   border-color: rgba(255, 255, 255, 0);
+}
+header .bouton-nav:hover {
+  background-color: #ffff;
+  border: solid 2px #C1F7D5;
 }
 main {
   width: 100%;
@@ -192,6 +201,12 @@ main .what-we-do .categories-wwd .wwd-droit .read-more {
   border-color: rgba(255, 255, 255, 0);
   margin-left: 32px;
   margin-bottom: 32px;
+}
+main .what-we-do .categories-wwd .wwd-gauche .read-more:hover,
+main .what-we-do .categories-wwd .wwd-centre .read-more:hover,
+main .what-we-do .categories-wwd .wwd-droit .read-more:hover {
+  background-color: #ffff;
+  border: #C1F7D5 2px solid;
 }
 @media screen and (max-width: 600px) {
   header {

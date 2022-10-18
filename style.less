@@ -31,11 +31,12 @@ header {
 
                    display: flex;
                    flex-direction: row;
-                   margin-left: 184px;
+                   margin-left: 184pxs;
                    margin-right: 70px;
                      
                         li {
 
+                            display: flex;
                             list-style: none;
 
                         }
@@ -48,6 +49,11 @@ header {
                                     margin-left: 70px;
 
                                 }
+
+                                a:hover {
+
+                                    text-decoration: underline 2px solid @bleu;
+                                    transition: 1s;                                }
                         }
                         
                 }
@@ -66,7 +72,13 @@ header {
             -moz-border-radius:    25px / 24px; 
             border-radius:         25px / 24px; 
             border-color: rgba(255, 255, 255, 0);
-        }  
+        } 
+
+        .bouton-nav:hover {
+
+            background-color: @blanc;
+            border: solid 2px @vert;
+        }
 
 }
 
@@ -270,6 +282,12 @@ main {
                                     margin-left: 32px;
                                     margin-bottom: 32px;
 
+                                }
+
+                                .read-more:hover {
+
+                                    background-color: @blanc;
+                                    border: @vert 2px solid;
                                 }
                         }
                 }
